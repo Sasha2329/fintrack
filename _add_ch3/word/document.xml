@@ -1,0 +1,1799 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" mc:Ignorable="w14 w15 wp14">
+  <w:body>
+    <w:p w14:paraId="614CDDAA">
+      <w:pPr>
+        <w:pStyle w:val="91" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5CE0A1FD">
+      <w:pPr>
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:br w:type="page" />
+      </w:r>
+      <w:bookmarkStart w:id="0" w:name="_Toc187837119" />
+      <w:bookmarkStart w:id="1" w:name="_Toc41982003" />
+      <w:bookmarkStart w:id="2" w:name="_Toc89871445" />
+      <w:r>
+        <w:t xml:space="preserve">  </w:t>
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:tab />
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:szCs w:val="32" />
+        </w:rPr>
+        <w:t>Введение</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="0" />
+      <w:bookmarkEnd w:id="1" />
+      <w:bookmarkEnd w:id="2" />
+    </w:p>
+    <w:p w14:paraId="467A03B4">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>В последние годы сфера личных финансов претерпевает значительные изменения, обусловленные активным развитием цифровых технологий, ростом безналичных расчётов и расширением числа финансовых сервисов, используемых населением. Банковские карты, электронные кошельки, онлайн-подписки, маркетплейсы и инвестиционные инструменты стали неотъемлемой частью повседневной жизни. Пользователи всё чаще совершают финансовые операции в цифровой среде, включая оплату товаров и услуг на таких платформах, как Wildberries, Ozon и Яндекс.Маркет, что приводит к постоянному увеличению объёма транзакций и усложнению структуры личных расходов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4B3F1000">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>В условиях многообразия финансовых источников пользователи сталкиваются с проблемой фрагментации данных: информация о доходах и расходах распределена между различными банковскими приложениями, сервисами и платёжными инструментами. Это затрудняет получение целостной картины финансового состояния, усложняет анализ структуры трат и снижает эффективность планирования бюджета. При этом динамика цен, распространение подписочных моделей и регулярные незапланированные расходы требуют более осознанного и системного подхода к управлению личными финансами.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="065EB5C9">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Существующие цифровые решения, как правило, ограничиваются базовым отображением операций и простейшей категоризацией расходов в рамках одного финансового учреждения. Большинство сервисов не предоставляет возможностей для комплексного анализа, долгосрочного планирования и совместного ведения бюджета, что существенно снижает их практическую ценность для пользователей. Отсутствие единой платформы, способной объединить данные из различных источников и предоставить аналитическую поддержку, затрудняет принятие взвешенных финансовых решений.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2DC2D9F6">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>В связи с этим особую актуальность приобретает разработка платформы для онлайн-учёта и управления личными финансами, ориентированной на автоматизированный сбор и обработку финансовых данных, анализ структуры расходов и поддержку пользовательских сценариев планирования. Такое решение позволяет не только фиксировать текущие операции, но и выявлять закономерности финансового поведения, оценивать динамику расходов и формировать цели по оптимизации бюджета. Разрабатываемая веб-платформа представляет собой программную систему, обеспечивающую централизованный учёт финансовых операций, хранение истории данных и аналитическую обработку информации. Целью выпускной квалификационной работы является разработка программного продукта, направленного на повышение прозрачности и эффективности управления личными финансами пользователей.</w:t>
+      </w:r>
+      <w:r>
+        <w:t>В первой главе проводится …</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="27308F81">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+      <w:r>
+        <w:t>Во второй главе описываются …</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0CFE193D">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+      <w:r>
+        <w:t>В третьей главе приводятся …</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0B1AF6AE">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+      <w:r>
+        <w:t>В четвёртой главе …</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2476298F">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="64251D34">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="7EDE2DF3">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="2C95D038">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="0A61C173">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="5A7E1C5C">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="65957240">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="168CDF3D">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3FFFB081">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3B26762F">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="03A972FD">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="48C6C0F4">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="484C54C7">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="634708BB">
+      <w:pPr>
+        <w:pStyle w:val="40" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1480" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>Теоретический раздел</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3A1B354B">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>В данном разделе проводится анализ существующих подходов и программных решений в области цифровизации процессов управления личными финансами. Рассматриваются основные направления развития систем учёта доходов и расходов, их функциональные возможности, а также ограничения, возникающие при практическом использовании подобных инструментов. Особое внимание уделяется вопросам автоматизации сбора финансовых данных, их структурирования и последующего анализа в рамках персональных финансовых платформ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="30F52388">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t xml:space="preserve">На основе изучения предметной области формулируются цели и задачи , связанные с разработкой программного решения, ориентированного на повышение прозрачности финансовой информации и поддержку принятия обоснованных пользовательских решений. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="673AB80C">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Обзор предметной области</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="346DC601">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Управление личными финансами в условиях современной цифровой экономики становится одной из повседневных задач для широкого круга пользователей. Регулярные расходы на товары и услуги, подписочные модели потребления, использование нескольких банковских карт и платёжных инструментов приводят к усложнению финансовой картины отдельного человека или домохозяйства. Пользователи вынуждены самостоятельно анализировать свои траты, сопоставлять доходы и расходы, а также принимать решения о целесообразности тех или иных финансовых операций.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2AD9D017">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Несмотря на доступность электронных сервисов, процесс учёта личных финансов часто остаётся разрозненным и неструктурированным. Финансовая информация распределена между различными источниками, что затрудняет её комплексный анализ. Пользователь, ориентируясь только на отдельные выписки или текущий баланс, не всегда способен объективно оценить структуру расходов, выявить неэффективные статьи трат или спрогнозировать финансовую нагрузку в будущем.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4EF0F2AE">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>На практике управление личным бюджетом нередко осуществляется вручную либо с использованием базовых функций банковских приложений. Такие инструменты позволяют просматривать операции и формировать простые отчёты, однако не обеспечивают полноценного анализа финансового поведения. Отсутствует возможность гибкой настройки категорий, долгосрочного планирования, а также учёта совместных расходов, что особенно актуально для семейных пользователей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7AB6285A">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Существующие системы учёта личных финансов, как правило, ориентированы на фиксацию уже совершённых операций. Они отображают историю транзакций и текущие показатели, но не предоставляют инструментов для углублённого анализа и прогнозирования. Пользователь получает информацию о прошлом, однако не имеет достаточной аналитической поддержки для оценки будущих финансовых сценариев. В результате принятие решений часто основывается на интуитивных оценках и неполных данных.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6F2EEB50">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Дополнительную сложность представляет необходимость обработки значительных объёмов финансовой информации. Анализ регулярных и нерегулярных расходов, сезонных колебаний и долгосрочных обязательств требует применения автоматизированных методов обработки данных. Без использования специализированных программных средств выявление закономерностей и тенденций становится затруднительным.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="644E97EA">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="40AD6590">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>В рамках предметной области особое значение приобретают интеллектуальные платформы управления личными финансами, обеспечивающие автоматизированный сбор данных, их структурирование и аналитическую обработку. Такие системы позволяют перейти от простого учёта операций к осознанному управлению бюджетом, поддерживая пользователя при планировании расходов и достижении финансовых целей. Разработка веб-платформы, объединяющей функции учёта, анализа и планирования личных финансов, направлена на устранение выявленных ограничений и формирование удобного цифрового инструмента для конечных пользователей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="19AD3C72">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Обзор существующих аналогов</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5FB9C7C0">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>В процессе разработки платформы для онлайн-учёта и управления личными финансами необходимо учитывать существующие решения на рынке. Анализ конкурентов позволяет определить распространённые подходы к организации финансового учёта, выявить ограниченные функциональные возможности существующих сервисов и обосновать необходимость создания комплексной платформы с аналитическим и прогнозным функционалом.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0CD258CE">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+          <w:lang w:val="ru-RU" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Современные приложения для личных финансов, как правило, предоставляют пользователю возможность вести учёт доходов и расходов, просматривать баланс по счетам и видеть историю операций. Однако в большинстве случаев функциональность ограничивается простым учётом транзакций и базовой категоризацией расходов. Продвинутые инструменты анализа, прогнозирования финансового поведения или поддержки планирования бюджета отсутствуют либо реализованы фрагментарно.</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+          <w:lang w:val="ru-RU" />
+        </w:rPr>
+        <w:t>я</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+          <w:lang w:val="ru-RU" />
+        </w:rPr>
+        <w:tab />
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0B5E65E0">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Одним из популярных российских решений является ДЗЕН Мани, ориентированное на ведение личного бюджета и автоматическое распределение расходов по категориям. Пользователь может отслеживать траты по счетам, планировать бюджет и получать уведомления о предельных расходах в каждой категории. Несмотря на удобный интерфейс и возможность интеграции с банками, сервис не обеспечивает сложного анализа финансовых тенденций и прогнозирования будущих расходов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="01955AC4">
+      <w:pPr>
+        <w:pStyle w:val="46" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="4832985" cy="5847080" />
+            <wp:effectExtent l="0" t="0" r="5715" b="1270" />
+            <wp:docPr id="1" name="Изображение 1" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="1" name="Изображение 1" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" />
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="4832985" cy="5847080" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                    <a:noFill />
+                    <a:ln>
+                      <a:noFill />
+                    </a:ln>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5B3234FF">
+      <w:pPr>
+        <w:pStyle w:val="87" />
+      </w:pPr>
+      <w:r>
+        <w:t>Рисунок 1.1 – Пример работы сайта «</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>ДЗЕН Мани</w:t>
+      </w:r>
+      <w:r>
+        <w:t>»</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7FDCCCEF">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Несмотря на удобный интерфейс и наглядное представление расходов, функциональные возможности приложения ограничиваются только фиксацией текущих транзакций и построением графиков расходов. Анализ финансовой динамики носит преимущественно справочный характер, а инструменты прогнозирования бюджета и долгосрочного планирования отсутствуют. Таким образом, пользователь получает информацию о своих текущих расходах и доходах, но не может оценить вероятное финансовое поведение в будущем или планировать крупные цели.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="220F5F2A">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Другой пример — CoinKeeper, предоставляющий визуализацию расходов с помощью диаграмм и графиков, позволяя пользователю оценивать структуру трат за выбранный период. Сервис поддерживает планирование бюджета и уведомления о превышении лимитов. Тем не менее возможности интеллектуального анализа данных и построения прогнозов остаются ограниченными, а персонализированные рекомендации по оптимизации расходов реализованы частично.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="01B68D47">
+      <w:pPr>
+        <w:pStyle w:val="46" />
+        <w:rPr>
+          <w:bCs />
+          <w:lang w:val="en-US" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="4829175" cy="4704715" />
+            <wp:effectExtent l="0" t="0" r="9525" b="635" />
+            <wp:docPr id="2" name="Изображение 2" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="2" name="Изображение 2" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId9" />
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="4829175" cy="4704715" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                    <a:noFill />
+                    <a:ln>
+                      <a:noFill />
+                    </a:ln>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="23160D72">
+      <w:pPr>
+        <w:pStyle w:val="87" />
+      </w:pPr>
+      <w:r>
+        <w:t>Рисунок 1.2 – Пример работы сайта «</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>CoinKeeper</w:t>
+      </w:r>
+      <w:r>
+        <w:t>»</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6D23BDBB">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Приложение предлагает наглядную визуализацию расходов и поддержку категорий бюджета, однако его возможности ограничены рамками текущих финансовых операций. Прогнозирование доходов и расходов реализовано лишь частично, а автоматическая аналитика с выявлением закономерностей финансового поведения отсутствует. Пользователь может отслеживать текущие траты, но не имеет инструментов для долгосрочного планирования бюджета и прогнозирования будущих расходов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="16436427">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:bCs />
+        </w:rPr>
+        <w:t>Сервис Дребеденьги предлагает функционал учёта финансов с возможностью импорта банковских выписок и ручного добавления операций. Пользователи могут анализировать историю расходов и видеть остатки по счетам. Однако аналитические инструменты платформы ограничены стандартными сводками, а прогнозирование будущих финансовых сценариев отсутствует.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1F6B13C6">
+      <w:pPr>
+        <w:pStyle w:val="46" />
+        <w:rPr>
+          <w:bCs />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="114300" distR="114300">
+            <wp:extent cx="6047105" cy="4547870" />
+            <wp:effectExtent l="0" t="0" r="10795" b="5080" />
+            <wp:docPr id="3" name="Изображение 3" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="3" name="Изображение 3" />
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" />
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId10" />
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="6047105" cy="4547870" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                    <a:noFill />
+                    <a:ln>
+                      <a:noFill />
+                    </a:ln>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="73BE9D0E">
+      <w:pPr>
+        <w:pStyle w:val="87" />
+      </w:pPr>
+      <w:r>
+        <w:t>Рисунок 1.3 – Пример работы сайта «</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Дребеденьги</w:t>
+      </w:r>
+      <w:r>
+        <w:t>»</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1DD87D58">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Анализ существующих приложений показывает, что большинство сервисов в сфере личных финансов ориентированы на отображение текущего состояния бюджета и визуализацию расходов. Возможности прогнозирования финансовой динамики, автоматической классификации операций и комплексного планирования остаются ограниченными.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2C00D9E0">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Таким образом, на рынке отсутствуют решения, объединяющие в одной платформе кросс-банковский учёт, интеллектуальную аналитику и прогнозирование финансового поведения пользователя. Это создаёт предпосылки для разработки веб-приложения, которое позволит не только отслеживать расходы и доходы, но и планировать бюджет с учётом долгосрочных целей, совместного управления семейными финансами и автоматической аналитики, что подтверждает актуальность и практическую значимость темы выпускной квалификационной работы.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0D56861D">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Постановка задачи</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0A676F6B">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Проведённый анализ предметной области и существующих программных решений в сфере управления личными финансами показал, что большинство приложений ориентированы преимущественно на фиксацию текущих доходов и расходов. Такие системы позволяют пользователю вести учет операций, создавать категории трат и получать визуализацию текущих расходов, однако возможности интеллектуального анализа данных и прогнозирования бюджета в них ограничены или полностью отсутствуют.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="77ECDF5B">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Анализ отечественных и зарубежных решений продемонстрировал, что большинство платформ сосредоточено на отображении исторических данных и базовой аналитике, не предоставляя инструментов предиктивного планирования. Отсутствие возможностей прогнозирования не позволяет пользователям оценивать будущие финансовые потребности с учётом сезонных расходов, регулярных платежей и индивидуальных финансовых привычек, что снижает практическую ценность подобных сервисов для планирования бюджета и достижения финансовых целей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="665726F5">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Кроме того, существующие приложения, как правило, ориентированы либо на индивидуальное использование, либо на ограниченный набор сценариев (например, учёт трат по одному банковскому счёту), не обеспечивая универсального подхода для ведения кросс-банковского бюджета, совместного семейного учёта и долгосрочного планирования. Недостаточно внимания уделяется вопросам масштабируемости системы, интеграции с разными источниками финансовых данных, а также гибкости архитектуры для подключения новых функций и сервисов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51A32B69">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Таким образом, можно выделить ключевые недостатки существующих решений:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="023A3A3C">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="3" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>отсутствие автоматического прогнозирования финансового поведения пользователя;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4457D724">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="3" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>ограниченные возможности аналитической обработки накопленных данных;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6F3D80DF">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="3" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>фокус исключительно на текущем состоянии бюджета без оценки будущих финансовых потоков;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28ACDEA0">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="3" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>недостаточная универсальность и гибкость платформ для индивидуальных и совместных сценариев использования.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4486B5BF">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>На основании выявленных недостатков формулируется задача разработки программного решения, совмещающего функции учёта, анализа и прогнозирования финансов. Разрабатываемая система должна обеспечивать автоматический сбор данных о транзакциях из различных банков и источников, их хранение и обработку, а также построение прогнозов расходов и доходов с использованием современных методов машинного обучения.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="601EB544">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Целью проекта является создание веб-приложения для интеллектуального анализа личных финансов, позволяющего пользователям не только отслеживать текущие доходы и расходы, но и получать прогнозы бюджета, планировать крупные траты и достигать финансовых целей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3B77893B">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>Для достижения поставленной цели в рамках дипломной работы необходимо решить следующие задачи:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0C0ED549">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>провести анализ предметной области управления личными финансами и существующих приложений;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="387141FE">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>разработать архитектуру системы с учетом масштабируемости и возможности подключения новых источников данных;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="53057216">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>реализовать модуль автоматического сбора и хранения транзакций;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="52C7333E">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>разработать и обучить модели машинного обучения для прогнозирования финансовых потоков;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="44C729F7">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>создать серверную часть веб-приложения с использованием современных backend-технологий (Node.js, TypeScript, PostgreSQL, Redis, Kafka/RabbitMQ, Docker, JWT);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="41FF3830">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>обеспечить доступ к функционалу системы через веб-интерфейс (React + Next.js);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2B12C53D">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:keepNext w:val="0" />
+        <w:keepLines w:val="0" />
+        <w:pageBreakBefore w:val="0" />
+        <w:widowControl />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="4" />
+        </w:numPr>
+        <w:kinsoku />
+        <w:wordWrap />
+        <w:overflowPunct />
+        <w:topLinePunct w:val="0" />
+        <w:autoSpaceDE />
+        <w:autoSpaceDN />
+        <w:bidi w:val="0" />
+        <w:adjustRightInd />
+        <w:snapToGrid />
+        <w:ind w:left="1066" w:leftChars="0" w:hanging="363" w:firstLineChars="0" />
+        <w:textAlignment w:val="auto" />
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+        <w:t>провести тестирование разработанного приложения и оценить корректность работы прогнозов и аналитических функций.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="41BC8A43">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Выводы к главе</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0D416E6A">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+        <w:t>В данной главе была рассмотрена предметная область управления личными финансами, а также выполнен обзор существующих программных решений на рынке. Проведён анализ функциональных возможностей приложений ДЗЕН Мани, CoinKeeper и Дребеденьги, ориентированных на фиксацию и визуализацию доходов и расходов пользователей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3619B57E">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+        <w:t>В результате анализа были выявлены ключевые достоинства этих приложений, включая удобный интерфейс, возможность классификации расходов, визуализацию финансовых потоков и уведомления о превышении бюджета. Вместе с тем установлено, что данные сервисы обладают значительными ограничениями: отсутствуют механизмы интеллектуального прогнозирования бюджета, аналитическая обработка данных ограничена, а методы машинного обучения для предсказания финансового поведения пользователей не применяются.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="16D6B98C">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+        <w:t>Таким образом, на основании проведённого анализа была сформулирована задача разработки программной системы, объединяющей функции автоматического учёта транзакций, аналитики расходов и прогнозирования финансового поведения пользователя. Разрабатываемая платформа должна предоставлять пользователю не только информацию о текущем состоянии бюджета, но и прогнозы будущих расходов и доходов, что является её ключевым преимуществом перед существующими аналогами.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4E817A2E">
+      <w:pPr>
+        <w:pStyle w:val="81" />
+        <w:rPr>
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+          <w:lang w:eastAsia="ru-RU" />
+        </w:rPr>
+        <w:t>Реализация данного проекта позволит повысить финансовую грамотность пользователей, упростить планирование бюджета, способствовать рациональному использованию денежных средств и создать основу для дальнейшего развития интеллектуальных инструментов управления личными финансами с использованием современных технологий машинного обучения.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1BBDF252">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:ind w:firstLine="0" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="57EAFB4A">
+      <w:pPr>
+        <w:pStyle w:val="67" />
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="60D3835F">
+      <w:pPr>
+        <w:pStyle w:val="40" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1480" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Проектирование клиентской части платформы «Финтрек» для управления личными финансами</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1723EEED">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Во второй главе рассматривается проектирование клиентской части платформы «Финтрек». Раздел описывает структуру пользовательского интерфейса, логику взаимодействия экранов с серверной частью, правила обработки данных и подход к интеграции с тестовым кошельком. Акцент сделан на тех решениях, которые уже реализованы в текущем коде проекта.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="41C52E3A">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Обобщенная архитектурная схема платформы</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="602C9E5B">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>На рисунке 2.1 представлена архитектурная схема взаимодействия компонентов системы.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="377FAB92">
+      <w:pPr>
+        <w:pStyle w:val="87" />
+      </w:pPr>
+      <w:r>
+        <w:t>Рисунок 2.1 – Обобщенная архитектурная схема платформы «Финтрек»</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4E8AD28D">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Клиентская часть работает по модели одностраничного приложения (Single Page Application, SPA) и обменивается данными с сервером через программный интерфейс приложения (Application Programming Interface, API). Пользовательские действия на экранах дашборда, операций, прогноза и тестового кошелька превращаются в HTTP-запросы к backend-модулям.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6DE82595">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Серверная часть построена модульно: аутентификация, транзакции, дашборд, прогноз, webhooks, sandbox-wallet, пользователи. Такой контур упрощает развитие проекта: новые функции добавляются в отдельные модули без переписывания всей системы. В качестве инфраструктурной основы используется Docker Compose, поэтому запуск среды остается воспроизводимым на разных рабочих машинах.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="381ABB74">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="1" />
+          <w:numId w:val="2" />
+        </w:numPr>
+        <w:ind w:left="1495" w:leftChars="0" w:firstLineChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve"> Проектирование подсистемы аутентификации и управления доступом</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="15940D6E">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Подсистема аутентификации обеспечивает регистрацию, вход и проверку прав доступа к защищённым маршрутам. После успешной проверки учетных данных сервер формирует JSON Web Token (JWT), который клиентская часть передаёт в каждом запросе к приватным endpoint.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6FAC3E4E">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>На клиенте реализована логика хранения токена в сессии пользователя, обработка ошибок авторизации и корректный выход из аккаунта. Если токен недействителен, интерфейс закрывает защищённые разделы и переводит пользователя на экран входа. Такой сценарий устраняет ситуацию, когда пользователь видит данные без подтверждённой авторизации.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2587693B">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Для административного режима применена отдельная проверка. Это позволяет отделить стандартный пользовательский контур от контента, который должен быть доступен только администратору, включая список учетных записей и служебную статистику.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7BE7239F">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1 Модель данных подсистемы аутентификации</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="15A95FCE">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>На рисунке 2.2 представлена схема данных подсистемы аутентификации.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="133556B8">
+      <w:pPr>
+        <w:pStyle w:val="87" />
+      </w:pPr>
+      <w:r>
+        <w:t>Рисунок 2.2 – Даталогическая схема подсистемы аутентификации</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="448E4F8C">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В базе данных хранятся данные пользователя, учетные параметры входа и роль доступа. В структуре пользователя используются поля идентификатора, электронной почты, имени и хеша пароля. Для защиты учетных данных используется хеширование пароля на серверной стороне.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5C17B732">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Связь аутентификации с остальными модулями строится по идентификатору пользователя. Это позволяет однозначно связывать операции, цели, бюджеты и события тестового кошелька с владельцем аккаунта и формировать персональную аналитику без смешивания данных между пользователями.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28857389">
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>2.3 Проектирование клиентской части</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="55DD62C3">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Проектирование клиентской части платформы «Финтрек» строится вокруг модульной архитектуры, которую можно развивать без полной переработки интерфейса. Такой подход упрощает сопровождение, ускоряет внедрение новых функций и снижает риск регрессий при обновлениях. Интерфейс при этом должен оставаться понятным в ежедневной работе: от просмотра баланса до создания операций и контроля лимитов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7ED4F441">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>К ключевым требованиям к пользовательскому интерфейсу относятся следующие положения:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2D3BCAEA">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>1. Прозрачная модель взаимодействия и предсказуемость действий. Пользователь должен быстро проходить типовые сценарии: вход, просмотр дашборда, добавление дохода или расхода, переход к целям, бюджетам и тестовому кошельку. У каждого действия должен быть понятный результат, без скрытых шагов и неочевидных переходов.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3AFACAB9">
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>2. Актуализация данных без ручного обновления страницы. Для финансового сервиса это критично: баланс, история операций, статус синхронизации и аналитические блоки должны обновляться автоматически. Это реализуется за счёт архитектуры Single Page Application (SPA) и регулярного обмена с сервером через программный интерфейс приложения (Application Programming Interface, API).</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3. Реализация программного средства «Финтрек»</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В третьей главе рассматривается практическая реализация программного средства «Финтрек». Описание включает выбор технологического стека, организацию структуры проекта, реализацию ключевых модулей клиентской и серверной частей, а также механизмы интеграции, синхронизации и уведомлений. Текст главы опирается на фактически реализованный код и рабочие сценарии приложения.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3.1 Выбор средств разработки программного средства</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Для клиентской части выбран язык TypeScript, который расширяет JavaScript системой статической типизации. В условиях проекта это сократило число ошибок на этапе сборки и упростило поддержку форм ввода, аналитических компонент и маршрутизации. Когда в интерфейсе одновременно работают операции, бюджеты, цели и интеграция с кошельком, строгая типизация становится практическим инструментом контроля качества, а не формальным требованием.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Библиотека React использована как основа пользовательского интерфейса. Компонентный подход позволил собрать единый набор переиспользуемых элементов: карточки сводной аналитики, формы операций, таблицы истории, фильтры по периодам, блоки статусов синхронизации. Такой формат ускорил разработку и сделал поведение экранов предсказуемым при масштабировании функциональности.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Серверная часть реализована на NestJS с использованием TypeScript. Эта связка упростила модульное разделение системы на доменные зоны: авторизация, транзакции, дашборд, прогноз, webhooks, сервис тестового кошелька, управление пользователями. Для доступа к данным применяется TypeORM, а в роли системы управления базами данных используется PostgreSQL.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Сборка и запуск проекта выполняются в контейнерной среде Docker Compose. Такой способ развёртывания обеспечивает воспроизводимость рабочего окружения: backend-сервис и база данных запускаются с одинаковыми параметрами на разных машинах, что особенно важно для демонстрации и тестирования выпускной работы.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3.2 Реализация серверной части платформы</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Серверная часть организована по модульному принципу. Модуль AuthModule отвечает за регистрацию, вход и контроль доступа к защищённым маршрутам. После успешной проверки учетных данных пользователю выдается JSON Web Token (JWT), который используется при обращении к приватным endpoint.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Модуль TransactionsModule реализует создание и выборку финансовых операций, а также очистку пользовательской статистики. Каждая операция сохраняет тип, сумму, категорию, дату, комментарий и источник поступления. Это позволяет разделять транзакции, введённые вручную, и события, пришедшие по интеграционному каналу.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Модуль DashboardModule формирует агрегированные показатели за выбранный период: общий баланс, суммы доходов и расходов, структуру категорий и динамику изменений. Модуль ForecastModule рассчитывает прогноз на следующий период по накопленной истории операций. В результате пользователь получает не только факт текущего состояния, но и ориентир по ожидаемому движению средств.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Модуль WebhooksModule предоставляет точки интеграции для внешних событий списания и зачисления. В текущей реализации роль внешнего источника выполняет тестовый кошелёк, что позволяет демонстрировать автоматизацию учета без подключения коммерческого банковского API.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3.3 Реализация клиентской части платформы</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Клиентская часть реализована как Single Page Application (SPA) и включает экраны авторизации, дашборда, операций, прогноза, бюджетов, целей и тестового кошелька. Навигация построена так, чтобы пользователь переходил между сценариями без полной перезагрузки страницы.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>На экране дашборда отображаются ключевые метрики: текущий баланс, сумма доходов, сумма расходов, диаграммы по категориям и динамика по периодам «Неделя», «Месяц», «Год». Визуальная аналитика помогает быстрее находить отклонения и принимать решения по корректировке трат.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Экран операций поддерживает ручной ввод с выбором типа, категории, даты и суммы. Для удобства добавлены фильтры и унифицированные элементы управления, согласованные с общим стилем интерфейса. При сетевых сбоях операции помещаются в локальную очередь и отправляются на сервер после восстановления соединения.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Экран тестового кошелька реализует сценарии «покупка», «пополнение», «перевод», «возврат». Пользователь выбирает счёт отправителя и получателя, а результат операции фиксируется в истории кошелька и синхронно передаётся в основную финансовую модель. За счёт этого дашборд и прогноз обновляются автоматически после каждой подтвержденной транзакции.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3.4 Реализация интеграционных и сервисных механизмов</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В проекте реализован офлайн-контур обработки операций. Если интернет недоступен, клиент сохраняет действие в очередь синхронизации и отображает статус ожидания. После восстановления соединения операции отправляются на сервер в исходной последовательности, что исключает потерю пользовательских данных.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Для проверки интеграций добавлен экран входящих событий, где отображаются операции, поступившие из тестового кошелька. Такой инструмент позволяет контролировать корректность обмена и быстро диагностировать ошибки маршрутизации.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Дополнительно реализованы email-уведомления через Simple Mail Transfer Protocol (SMTP): при регистрации, входе и добавлении операций пользователю отправляются сообщения на электронную почту. Этот механизм повышает прозрачность действий в аккаунте и усиливает пользовательский контроль над финансовыми событиями.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>На уровне безопасности используются валидация входных данных, ролевая модель доступа и защита приватных маршрутов JWT-токеном. Такой набор мер закрывает базовые риски несанкционированного доступа и поддерживает целостность пользовательских данных.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="44" />
+        <w:numPr>
+          <w:ilvl w:val="0" />
+          <w:numId w:val="0" />
+        </w:numPr>
+        <w:ind w:left="1120" w:leftChars="0" />
+      </w:pPr>
+      <w:r>
+        <w:t>3.5 Вывод по главе</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В третьей главе представлена реализация платформы «Финтрек» на уровне выбранного технологического стека, программной архитектуры и прикладных модулей. Подробно описаны серверные компоненты, клиентские сценарии, интеграционный контур тестового кошелька и сервисные механизмы синхронизации и уведомлений.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="42" />
+        <w:rPr>
+          <w:rFonts w:hint="default" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Результаты реализации подтверждают работоспособность предложенной модели: платформа принимает операции из двух контуров, формирует аналитическую картину в интерфейсе и поддерживает устойчивую работу при нестабильном соединении. Полученная программная база готова к следующему этапу — тестированию, измерению качества и оценке практической эффективности.</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr>
+      <w:headerReference r:id="rId5" w:type="default" />
+      <w:footerReference r:id="rId6" w:type="default" />
+      <w:pgSz w:w="11906" w:h="16838" />
+      <w:pgMar w:top="1134" w:right="851" w:bottom="1304" w:left="1531" w:header="794" w:footer="227" w:gutter="0" />
+      <w:pgNumType w:start="4" />
+      <w:cols w:space="708" w:num="1" />
+      <w:titlePg />
+      <w:docGrid w:linePitch="382" w:charSpace="0" />
+    </w:sectPr>
+  </w:body>
+</w:document>
