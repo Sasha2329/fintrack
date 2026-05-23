@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fintrack-cache-v3';
+const CACHE_NAME = 'fintrack-cache-v4';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -45,6 +45,48 @@ function isStaticAsset(requestUrl) {
   );
 }
 
+function getAssetPathsFromHtml(html) {
+  return [...html.matchAll(/(?:src|href)=["']([^"']+)["']/g)]
+    .map((match) => match[1])
+    .filter((path) => path.startsWith('/'))
+    .filter(
+      (path) =>
+        path.startsWith('/assets/') ||
+        path.endsWith('.js') ||
+        path.endsWith('.css') ||
+        path.endsWith('.svg') ||
+        path.endsWith('.png') ||
+        path.endsWith('.webmanifest')
+    );
+}
+
+async function cacheAssetsFromHtml(response) {
+  try {
+    const html = await response.clone().text();
+    const assetPaths = [...new Set(getAssetPathsFromHtml(html))];
+
+    if (!assetPaths.length) {
+      return;
+    }
+
+    const cache = await caches.open(CACHE_NAME);
+    await Promise.all(
+      assetPaths.map(async (path) => {
+        try {
+          const assetResponse = await fetch(path, { cache: 'no-cache' });
+          if (assetResponse.ok) {
+            await cache.put(path, assetResponse);
+          }
+        } catch {
+          // Ignore asset fetch failures so the app shell can still load.
+        }
+      })
+    );
+  } catch {
+    // Ignore HTML parsing failures and keep the app shell available.
+  }
+}
+
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') {
     return;
@@ -59,10 +101,13 @@ self.addEventListener('fetch', (event) => {
   if (isNavigationRequest(event.request)) {
     event.respondWith(
       fetch(event.request)
-        .then((response) => {
+        .then(async (response) => {
           if (response.ok) {
-            const cloned = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put('/index.html', cloned));
+            const cache = await caches.open(CACHE_NAME);
+            await cache.put('/index.html', response.clone());
+            await cache.put('/', response.clone());
+            await cache.put(event.request, response.clone());
+            await cacheAssetsFromHtml(response);
           }
           return response;
         })
