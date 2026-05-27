@@ -134,6 +134,14 @@ export function ForecastPage() {
               <span>Рекомендуемый резерв</span>
               <strong>{forecast.reserveTarget.toLocaleString('ru-RU')} ₽</strong>
             </div>
+            <div className="forecast-tile">
+              <span>Ожидаемые накопления</span>
+              <strong>{forecast.projectedSavings.toLocaleString('ru-RU')} ₽</strong>
+            </div>
+            <div className="forecast-tile">
+              <span>Надежность прогноза</span>
+              <strong>{forecast.confidenceScore} / 100</strong>
+            </div>
           </div>
 
           <div className="progress-card">
@@ -205,16 +213,16 @@ export function ForecastPage() {
 
           <div className="insight-list">
             <div className="insight-item">
-              Анализируются последние месяцы активности пользователя.
+              Анализируются последние месяцы активности пользователя с повышенным весом для свежих периодов.
             </div>
             <div className="insight-item">
-              Вычисляются средние доходы и расходы за историю наблюдений.
+              Базовый прогноз сравнивается с темпом текущего месяца, чтобы учитывать ускорение или спад.
             </div>
             <div className="insight-item">
-              Учитывается текущий темп расходов и доходов в активном месяце.
+              Для прогноза расходов учитывается волатильность: чем сильнее скачки по месяцам, тем осторожнее лимит.
             </div>
             <div className="insight-item">
-              Формируются рекомендации: безопасный лимит трат и резерв на следующий месяц.
+              Формируются рекомендации: безопасный лимит трат, резерв, ожидаемые накопления и уровень надежности.
             </div>
           </div>
 
@@ -230,4 +238,3 @@ export function ForecastPage() {
     </div>
   );
 }
-

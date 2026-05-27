@@ -47,13 +47,27 @@ export function WalletHistoryPage() {
       return [{ label: 'Старт', value: mainAccount.initialBalance }];
     }
 
-    return source.map((operation) => ({
-      label: new Date(operation.occurredAt).toLocaleDateString('ru-RU', {
+    const byDay = source.reduce<Array<{ label: string; value: number }>>((acc, operation) => {
+      const label = new Date(operation.occurredAt).toLocaleDateString('ru-RU', {
         day: '2-digit',
         month: '2-digit'
-      }),
-      value: operation.balanceAfter
-    }));
+      });
+      const existing = acc.find((item) => item.label === label);
+
+      if (existing) {
+        existing.value = operation.balanceAfter;
+        return acc;
+      }
+
+      acc.push({
+        label,
+        value: operation.balanceAfter
+      });
+
+      return acc;
+    }, []);
+
+    return byDay;
   }, [connectedWallet, mainAccount]);
 
   const chartPoints = useMemo(() => {
@@ -61,8 +75,12 @@ export function WalletHistoryPage() {
       return '';
     }
 
-    const max = Math.max(...mainAccountSeries.map((item) => item.value), 1);
-    const min = Math.min(...mainAccountSeries.map((item) => item.value), 0);
+    const values = mainAccountSeries.map((item) => item.value);
+    const rawMax = Math.max(...values);
+    const rawMin = Math.min(...values);
+    const padding = Math.max((rawMax - rawMin) * 0.18, Math.abs(rawMax) * 0.03, 1);
+    const max = rawMax + padding;
+    const min = rawMin - padding;
     const range = Math.max(max - min, 1);
 
     return mainAccountSeries

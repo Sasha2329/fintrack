@@ -715,17 +715,36 @@ label {
 
 .transaction-delete {
   margin-top: 0.65rem;
-  padding: 0.55rem 0.9rem;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   border-radius: 12px;
   background: rgba(255, 140, 125, 0.12);
   border: 1px solid rgba(255, 140, 125, 0.24);
   color: #ffd7d2;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .transaction-delete:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.transaction-delete__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.transaction-delete__loader {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 215, 210, 0.28);
+  border-top-color: currentColor;
+  animation: spin 0.75s linear infinite;
 }
 
 .transaction-badges {
@@ -826,6 +845,31 @@ label {
 .transaction-toolbar {
   display: grid;
   gap: 1rem;
+}
+
+.section-jump-nav {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.section-jump-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: var(--muted);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-jump-nav__link:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border-color: rgba(246, 180, 67, 0.24);
 }
 
 .quick-actions-panel,
@@ -1053,6 +1097,12 @@ label {
   vector-effect: non-scaling-stroke;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.line-chart__dot {
+  fill: #ffd27b;
+  stroke: rgba(16, 25, 36, 0.9);
+  stroke-width: 0.7;
 }
 
 .line-chart__labels {
@@ -1765,6 +1815,10 @@ label {
     padding: 0.95rem 1rem;
   }
 
+  .section-jump-nav {
+    flex-direction: column;
+  }
+
   .comparison-row {
     grid-template-columns: 1fr;
   }
@@ -1825,6 +1879,15 @@ label {
   .panel,
   .sidebar {
     border-radius: 24px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

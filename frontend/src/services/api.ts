@@ -207,6 +207,9 @@ export interface ForecastSummary {
   safeSpendLimit: number;
   reserveTarget: number;
   healthScore: number;
+  confidenceScore: number;
+  projectedSavings: number;
+  expenseVolatility: number;
   topExpenseCategories: Array<{ name: string; total: number }>;
   recommendations: string[];
 }

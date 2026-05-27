@@ -121,7 +121,7 @@ export function TransactionsPage() {
   return (
     <div className="transactions-layout">
       {error ? <div className="error-banner">{error}</div> : null}
-      <section className="panel transaction-toolbar">
+      <section className="panel transaction-toolbar" id="transactions-overview">
         <div className="panel-heading">
           <h3>Журнал финансовых операций</h3>
           <p>
@@ -129,6 +129,18 @@ export function TransactionsPage() {
             интеграций.
           </p>
         </div>
+
+        <nav className="section-jump-nav" aria-label="Навигация по странице операций">
+          <a href="#transactions-overview" className="section-jump-nav__link">
+            Журнал финансовых операций
+          </a>
+          <a href="#transaction-form" className="section-jump-nav__link">
+            Новая операция
+          </a>
+          <a href="#transactions-history" className="section-jump-nav__link">
+            Все операции
+          </a>
+        </nav>
 
         <div className="automation-note">
           <div className="automation-note__item">
@@ -224,13 +236,16 @@ export function TransactionsPage() {
           </button>
         </div>
       </section>
-      <TransactionForm onSubmit={handleCreate} />
+      <div id="transaction-form">
+        <TransactionForm onSubmit={handleCreate} />
+      </div>
       <TransactionList
         transactions={filteredTransactions}
         title="Все операции"
         description="Полная история с фильтрацией по типу, категории и датам."
         onDelete={handleDelete}
         deletingId={deletingId}
+        sectionId="transactions-history"
       />
     </div>
   );

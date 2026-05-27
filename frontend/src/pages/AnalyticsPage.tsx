@@ -106,13 +106,22 @@ export function AnalyticsPage() {
     }
 
     let runningBalance = 0;
-    const linePoints = byBucket.map((bucket) => {
+    const computedLinePoints = byBucket.map((bucket) => {
       runningBalance += bucket.balanceFlow;
       return {
         ...bucket,
         runningBalance
       };
     });
+
+    const activeLinePoints =
+      range === 'year'
+        ? computedLinePoints
+        : computedLinePoints.filter((point) => point.income !== 0 || point.expense !== 0);
+
+    const linePoints = activeLinePoints.length
+      ? activeLinePoints
+      : computedLinePoints.slice(-Math.min(computedLinePoints.length, range === 'week' ? 7 : 1));
 
     const topCategories = Object.entries(
       transactions.reduce<Record<string, number>>((acc, transaction) => {
@@ -166,8 +175,12 @@ export function AnalyticsPage() {
   }, [buckets, range, transactions]);
 
   const maxExpense = Math.max(...analytics.linePoints.map((item) => item.expense), 1);
-  const minLine = Math.min(...analytics.linePoints.map((item) => item.runningBalance), 0);
-  const maxLine = Math.max(...analytics.linePoints.map((item) => item.runningBalance), 1);
+  const lineValues = analytics.linePoints.map((item) => item.runningBalance);
+  const rawMinLine = Math.min(...lineValues, 0);
+  const rawMaxLine = Math.max(...lineValues, 0);
+  const linePadding = Math.max((rawMaxLine - rawMinLine) * 0.12, Math.max(Math.abs(rawMaxLine), Math.abs(rawMinLine)) * 0.05, 1);
+  const minLine = rawMinLine - linePadding;
+  const maxLine = rawMaxLine + linePadding;
   const linePath = analytics.linePoints
     .map((point, index) => {
       const x = analytics.linePoints.length === 1 ? 0 : (index / (analytics.linePoints.length - 1)) * 100;
@@ -243,6 +256,11 @@ export function AnalyticsPage() {
           <div className="line-chart">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="line-chart__svg">
               <path d={linePath} className="line-chart__path" />
+              {analytics.linePoints.map((point, index) => {
+                const x = analytics.linePoints.length === 1 ? 50 : (index / (analytics.linePoints.length - 1)) * 100;
+                const y = maxLine === minLine ? 50 : 100 - ((point.runningBalance - minLine) / (maxLine - minLine)) * 100;
+                return <circle key={point.key} cx={x} cy={y} r="1.6" className="line-chart__dot" />;
+              })}
             </svg>
             <div className="line-chart__labels">
               {analytics.linePoints.map((point) => (
