@@ -4,12 +4,16 @@ interface TransactionListProps {
   transactions: TransactionItem[];
   title?: string;
   description?: string;
+  onDelete?: (transaction: TransactionItem) => void | Promise<void>;
+  deletingId?: string | null;
 }
 
 export function TransactionList({
   transactions,
   title = 'История операций',
-  description = 'Последние изменения вашего финансового баланса.'
+  description = 'Последние изменения вашего финансового баланса.',
+  onDelete,
+  deletingId
 }: TransactionListProps) {
   return (
     <div className="panel">
@@ -31,8 +35,8 @@ export function TransactionList({
                 </span>
                 <span>
                   {transaction.source === 'webhook'
-                    ? `Автоматически${transaction.provider ? ` • ${transaction.provider}` : ''}`
-                    : 'Вручную'}
+                    ? `Безнал${transaction.provider ? ` • ${transaction.provider}` : ''}`
+                    : 'Наличная операция'}
                 </span>
               </div>
 
@@ -50,10 +54,20 @@ export function TransactionList({
                       transaction.source === 'webhook' ? 'badge badge--auto' : 'badge badge--manual'
                     }
                   >
-                    {transaction.source === 'webhook' ? 'Авто' : 'Ручной'}
+                    {transaction.source === 'webhook' ? 'Безнал' : 'Нал'}
                   </span>
                 </div>
                 <strong>{Number(transaction.amount).toLocaleString('ru-RU')} ₽</strong>
+                {onDelete ? (
+                  <button
+                    type="button"
+                    className="transaction-delete"
+                    onClick={() => onDelete(transaction)}
+                    disabled={deletingId === transaction.id}
+                  >
+                    {deletingId === transaction.id ? 'Удаляем...' : 'Удалить'}
+                  </button>
+                ) : null}
               </div>
             </article>
           ))

@@ -1,7 +1,6 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react';
 import {
   api,
-  IntegrationMeta,
   SandboxWalletPayload,
   SandboxWalletState
 } from '../services/api';
@@ -40,12 +39,10 @@ export function SandboxWalletPage() {
   const [virtualDraft, setVirtualDraft] = useState(12000);
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [integrationMeta, setIntegrationMeta] = useState<IntegrationMeta | null>(null);
 
   async function loadWalletState() {
-    const [wallet, meta] = await Promise.all([api.getSandboxWalletState(), api.getIntegrationMeta()]);
+    const wallet = await api.getSandboxWalletState();
     setWalletState(wallet);
-    setIntegrationMeta(meta);
   }
 
   useEffect(() => {
@@ -189,12 +186,12 @@ export function SandboxWalletPage() {
       setSelectedSavedPhone(null);
       setMessage(
         nextState.savedWallets?.some((wallet) => wallet.phoneNumber === connectForm.phoneNumber)
-          ? 'Тестовый кошелек подключен. Баланс и история восстановлены по номеру телефона.'
-          : 'Тестовый кошелек создан и подключен.'
+          ? 'Кошелёк подключен. Баланс и история восстановлены по номеру телефона.'
+          : 'Кошелёк создан и подключен.'
       );
     } catch (connectError) {
       const text =
-        connectError instanceof Error ? connectError.message : 'Не удалось подключить тестовый кошелек';
+        connectError instanceof Error ? connectError.message : 'Не удалось подключить кошелёк';
       setError(text);
     } finally {
       setIsConnecting(false);
@@ -215,7 +212,7 @@ export function SandboxWalletPage() {
         occurredAt: new Date(form.occurredAt).toISOString()
       });
       await loadWalletState();
-      setMessage('Операция проведена в тестовом кошельке и автоматически загружена в Финтрек.');
+      setMessage('Операция проведена в кошельке и автоматически загружена в Финтрек.');
       setForm((prev) => ({
         ...prev,
         amount: 0,
@@ -297,7 +294,7 @@ export function SandboxWalletPage() {
       });
       setWalletState(nextState);
       setForm((prev) => ({ ...prev, accountId: '' }));
-      setMessage('Стартовый баланс обновлен и заново распределен по счетам тестового кошелька.');
+      setMessage('Стартовый баланс обновлен и заново распределен по счетам кошелька.');
     } catch (applyError) {
       const text =
         applyError instanceof Error ? applyError.message : 'Не удалось обновить стартовый баланс';
@@ -311,19 +308,18 @@ export function SandboxWalletPage() {
     <div className="page-grid">
       <section className="hero-banner panel">
         <div className="hero-banner__content">
-          <span className="eyebrow">Тестовый кошелек</span>
-          <h2>Демо-банк с сохраненными кошельками, PIN и несколькими счетами</h2>
+          <span className="eyebrow">Кошелёк</span>
+          <h2>Управление кошельком, счетами и операциями в одном окне</h2>
           <p>
-            Пользователь может повторно входить в тестовый кошелек по номеру телефона, выбирать один
-            из сохраненных кошельков и управлять несколькими счетами внутри него. Все операции
-            автоматически синхронизируются с Финтрек.
+            Здесь можно подключить сохранённый кошелёк, переключаться между счетами, проводить
+            операции и сразу видеть, как они отражаются в общей финансовой картине.
           </p>
         </div>
 
         <div className="hero-highlight hero-highlight--focus">
-          <span>Ключевая идея</span>
-          <strong>Один номер телефона = один сохраненный демо-кошелек</strong>
-          <p>При повторном входе по тому же номеру восстанавливаются баланс, счета и история операций.</p>
+          <span>Быстрый вход</span>
+          <strong>Повторное подключение сохраняет счета и историю</strong>
+          <p>Достаточно войти по знакомому номеру и PIN, чтобы продолжить работу с тем же кошельком.</p>
         </div>
       </section>
 
@@ -358,7 +354,7 @@ export function SandboxWalletPage() {
                   </button>
                 ))
               ) : (
-                <div className="empty-state">Пока нет сохраненных тестовых кошельков.</div>
+                <div className="empty-state">Пока нет сохраненных кошельков.</div>
               )}
             </div>
           </section>
@@ -484,7 +480,7 @@ export function SandboxWalletPage() {
                   <img src="/fintrack-logo.svg" alt="Логотип Финтрек" className="wallet-showcase__logo" />
                   <div>
                     <strong>FinTrack Wallet</strong>
-                    <span>Demo Banking Layer</span>
+                    <span>Личный кошелёк</span>
                   </div>
                 </div>
                 <span className="wallet-showcase__chip">● ● ●</span>
@@ -510,7 +506,7 @@ export function SandboxWalletPage() {
 
           <section className="stats-grid">
             <div className="stats-card stats-card--slate wallet-card">
-              <span>Активный демо-кошелек</span>
+              <span>Активный кошелёк</span>
               <strong>•••• {connectedWallet.phoneNumber.slice(-4)}</strong>
               <p>{connectedWallet.ownerName}</p>
             </div>
@@ -805,7 +801,7 @@ export function SandboxWalletPage() {
                         <strong>{operation.title}</strong>
                         <span>{operation.accountTitle ?? 'Архивный счет'} • {operation.category}</span>
                         <span>{new Date(operation.occurredAt).toLocaleString('ru-RU')}</span>
-                        <span>{operation.note ?? 'Интеграционное событие тестового кошелька'}</span>
+                        <span>{operation.note ?? 'Интеграционное событие кошелька'}</span>
                       </div>
 
                       <div className="transaction-meta">
@@ -818,26 +814,15 @@ export function SandboxWalletPage() {
                     </article>
                   ))
                 ) : (
-                  <div className="empty-state">Пока нет операций в тестовом кошельке.</div>
+                  <div className="empty-state">Пока нет операций в кошельке.</div>
                 )}
               </div>
             </div>
 
             <section className="panel integration-meta">
               <div className="panel-heading">
-                <h3>Интеграционный контур</h3>
-                <p>Как кошелек с несколькими счетами связан с основной платформой Финтрек.</p>
-              </div>
-
-              <div className="integration-meta__card">
-                <strong>Повторный вход по номеру телефона</strong>
-                <span>Если номер и PIN совпадают, система восстанавливает тот же кошелек, его счета и историю операций.</span>
-              </div>
-
-              <div className="integration-meta__card">
-                <strong>Пример webhook-адреса</strong>
-                <span>{integrationMeta?.note ?? 'Адрес внешней интеграции загружается...'}</span>
-                {integrationMeta ? <div className="integration-url">{integrationMeta.exampleWebhookUrl}</div> : null}
+                <h3>Крупные категории списаний</h3>
+                <p>Быстрый срез расходов по активному кошельку без лишних технических подсказок.</p>
               </div>
 
               <div className="integration-meta__card">

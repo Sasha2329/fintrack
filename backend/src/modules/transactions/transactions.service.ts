@@ -82,6 +82,17 @@ export class TransactionsService {
     });
   }
 
+  async removeOneForUser(userId: string, transactionId: string) {
+    const result = await this.transactionsRepository.delete({
+      id: transactionId,
+      userId
+    });
+
+    return {
+      deleted: result.affected ?? 0
+    };
+  }
+
   async buildSummary(userId: string, month?: string) {
     const transactions = await this.findAllByUser(userId);
     const periodMonth = month ?? new Date().toISOString().slice(0, 7);

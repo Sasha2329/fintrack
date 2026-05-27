@@ -133,6 +133,11 @@ function setPendingTransactions(items: PendingTransactionRecord[]) {
   localStorage.setItem(PENDING_TRANSACTIONS_KEY, JSON.stringify(items));
 }
 
+function removePendingTransaction(localId: string) {
+  const nextItems = getPendingTransactions().filter((item) => item.localId !== localId);
+  setPendingTransactions(nextItems);
+}
+
 function toOfflineTransaction(record: PendingTransactionRecord): TransactionItem {
   return {
     id: record.localId,
@@ -389,6 +394,18 @@ export const api = {
     return [...pending, ...remote].sort((left, right) =>
       right.transactionDate.localeCompare(left.transactionDate)
     );
+  },
+  async deleteTransaction(transactionId: string) {
+    if (transactionId.startsWith('offline-')) {
+      removePendingTransaction(transactionId);
+      invalidateFinanceCaches();
+      return { deleted: 1 };
+    }
+
+    invalidateFinanceCaches();
+    return request<{ deleted: number }>(`/transactions/${transactionId}`, {
+      method: 'DELETE'
+    });
   },
   resetTransactions() {
     invalidateFinanceCaches();

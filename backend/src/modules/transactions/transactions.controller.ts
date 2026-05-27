@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { JwtPayload } from '../auth/interfaces/jwt-payload.interface';
@@ -18,6 +18,11 @@ export class TransactionsController {
   @Post()
   create(@CurrentUser() user: JwtPayload, @Body() dto: CreateTransactionDto) {
     return this.transactionsService.create(user.sub, dto);
+  }
+
+  @Delete(':id')
+  remove(@CurrentUser() user: JwtPayload, @Param('id') id: string) {
+    return this.transactionsService.removeOneForUser(user.sub, id);
   }
 
   @Delete('reset')

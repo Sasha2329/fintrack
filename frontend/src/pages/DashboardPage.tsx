@@ -1,10 +1,12 @@
 import { ChangeEvent, useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { DonutChartCard } from '../components/DonutChartCard';
 import { StatsCard } from '../components/StatsCard';
 import { TransactionList } from '../components/TransactionList';
 import { api, DashboardSummary } from '../services/api';
 
-const SETTINGS_KEY = 'financeflow_dashboard_settings';
+const SETTINGS_KEY = 'fintrack_dashboard_settings';
+const LEGACY_SETTINGS_KEY = 'financeflow_dashboard_settings';
 
 interface DashboardSettings {
   monthlyBudget: number;
@@ -33,13 +35,16 @@ export function DashboardPage() {
   const [summary, setSummary] = useState<DashboardSummary | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [settings, setSettings] = useState<DashboardSettings>(() => {
-    const raw = localStorage.getItem(SETTINGS_KEY);
+    const raw = localStorage.getItem(SETTINGS_KEY) ?? localStorage.getItem(LEGACY_SETTINGS_KEY);
     if (!raw) {
       return defaultSettings;
     }
 
     try {
-      return { ...defaultSettings, ...(JSON.parse(raw) as Partial<DashboardSettings>) };
+      const parsed = { ...defaultSettings, ...(JSON.parse(raw) as Partial<DashboardSettings>) };
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(parsed));
+      localStorage.removeItem(LEGACY_SETTINGS_KEY);
+      return parsed;
     } catch {
       return defaultSettings;
     }
@@ -57,6 +62,7 @@ export function DashboardPage() {
 
   useEffect(() => {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    localStorage.removeItem(LEGACY_SETTINGS_KEY);
   }, [settings]);
 
   const categoryMax = useMemo(() => {
@@ -123,11 +129,11 @@ export function DashboardPage() {
     <div className="page-grid">
       <section className="hero-banner panel">
         <div className="hero-banner__content">
-          <span className="eyebrow">Финансовая сводка</span>
-          <h2>Аналитика доходов и расходов в банковом формате</h2>
+          <span className="eyebrow">Сводка по бюджету</span>
+          <h2>Доходы, расходы и текущая картина по выбранному месяцу</h2>
           <p>
-            Выберите интересующий месяц, чтобы увидеть баланс периода, круговые диаграммы по
-            категориям и последние операции за выбранный отрезок времени.
+            Выберите месяц, чтобы посмотреть баланс периода, структуру категорий и последние
+            операции без перехода в другие разделы.
           </p>
 
           <div className="month-filter">
@@ -143,11 +149,11 @@ export function DashboardPage() {
         </div>
 
         <div className="hero-highlight">
-          <span>Финансовое здоровье</span>
+          <span>Состояние бюджета</span>
           <strong>{healthLabel}</strong>
           <p>
-            Платформа показывает живую картину бюджета за {monthLabel}. Общий баланс на дашборде
-            синхронизирован с основным счетом тестового кошелька.
+            Здесь собрана краткая оценка по доходам, расходам и общему балансу за {monthLabel}.
+            Если подключен кошелёк, его состояние тоже учитывается в общей сводке.
           </p>
         </div>
       </section>
@@ -185,6 +191,21 @@ export function DashboardPage() {
         </section>
       ) : null}
 
+      <section className="panel quick-actions-panel">
+        <div className="panel-heading">
+          <h3>Быстрые переходы</h3>
+          <p>Откройте нужный раздел одним нажатием, если хотите сразу перейти к полной истории операций.</p>
+        </div>
+
+        <div className="quick-actions-grid">
+          <Link to="/transactions" className="quick-action-card">
+            <span className="eyebrow">Журнал</span>
+            <strong>Все операции</strong>
+            <p>Полная история с фильтрами по типу, категории, месяцу и диапазону дат.</p>
+          </Link>
+        </div>
+      </section>
+
       <section className="chart-grid">
         <DonutChartCard
           title="Структура доходов"
@@ -206,7 +227,7 @@ export function DashboardPage() {
         <div className={`panel health-panel health-panel--${healthTone}`}>
           <div className="panel-heading">
             <h3>Индекс устойчивости</h3>
-            <p>Оценка на базе месячного баланса, доли накоплений и расходной нагрузки.</p>
+            <p>Сводный показатель на основе месячного баланса, накоплений и расходной нагрузки.</p>
           </div>
 
           <div className="health-score">
@@ -226,7 +247,7 @@ export function DashboardPage() {
         <div className="panel planner-panel">
           <div className="panel-heading">
             <h3>План на месяц</h3>
-            <p>Лимиты и цели теперь сравниваются с расходами за выбранный период.</p>
+            <p>Лимиты и цели сравниваются с фактическими расходами за выбранный период.</p>
           </div>
 
           <div className="planner-grid">

@@ -15,7 +15,11 @@ export function TransactionsPage() {
   const [search, setSearch] = useState('');
   const [typeFilter, setTypeFilter] = useState<'all' | 'income' | 'expense'>('all');
   const [categoryFilter, setCategoryFilter] = useState('all');
+  const [monthFilter, setMonthFilter] = useState('');
+  const [dateFrom, setDateFrom] = useState('');
+  const [dateTo, setDateTo] = useState('');
   const [isResetting, setIsResetting] = useState(false);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   async function loadTransactions() {
     try {
@@ -34,6 +38,27 @@ export function TransactionsPage() {
   async function handleCreate(payload: TransactionPayload) {
     await api.createTransaction(payload);
     await loadTransactions();
+  }
+
+  async function handleDelete(transaction: TransactionItem) {
+    const confirmed = window.confirm(`Удалить операцию «${transaction.title}»?`);
+    if (!confirmed) {
+      return;
+    }
+
+    setDeletingId(transaction.id);
+    setError(null);
+
+    try {
+      await api.deleteTransaction(transaction.id);
+      await loadTransactions();
+    } catch (deleteError) {
+      const message =
+        deleteError instanceof Error ? deleteError.message : 'Не удалось удалить операцию';
+      setError(message);
+    } finally {
+      setDeletingId(null);
+    }
   }
 
   async function handleReset() {
@@ -75,10 +100,20 @@ export function TransactionsPage() {
       const matchesType = typeFilter === 'all' || transaction.type === typeFilter;
       const matchesCategory =
         categoryFilter === 'all' || transaction.category === categoryFilter;
+      const matchesMonth = !monthFilter || transaction.transactionDate.slice(0, 7) === monthFilter;
+      const matchesDateFrom = !dateFrom || transaction.transactionDate.slice(0, 10) >= dateFrom;
+      const matchesDateTo = !dateTo || transaction.transactionDate.slice(0, 10) <= dateTo;
 
-      return matchesSearch && matchesType && matchesCategory;
+      return (
+        matchesSearch &&
+        matchesType &&
+        matchesCategory &&
+        matchesMonth &&
+        matchesDateFrom &&
+        matchesDateTo
+      );
     });
-  }, [transactions, search, typeFilter, categoryFilter]);
+  }, [transactions, search, typeFilter, categoryFilter, monthFilter, dateFrom, dateTo]);
 
   const incomeCount = transactions.filter((transaction) => transaction.type === 'income').length;
   const expenseCount = transactions.filter((transaction) => transaction.type === 'expense').length;
@@ -97,12 +132,12 @@ export function TransactionsPage() {
 
         <div className="automation-note">
           <div className="automation-note__item">
-            <strong>Ручной ввод</strong>
-            <span>Пользователь сам добавляет доход или расход через форму.</span>
+            <strong>Наличные операции</strong>
+            <span>Пользователь сам добавляет доход или расход через форму, если операция была вне банка.</span>
           </div>
           <div className="automation-note__item">
-            <strong>Автоматический импорт</strong>
-            <span>Операция поступает через webhook или тестовый кошелек как событие внешней системы.</span>
+            <strong>Безналичные операции</strong>
+            <span>Операция поступает автоматически из кошелька и сразу попадает в общую аналитику.</span>
           </div>
         </div>
 
@@ -137,6 +172,21 @@ export function TransactionsPage() {
                 </option>
               ))}
             </select>
+          </label>
+
+          <label>
+            Месяц
+            <input type="month" value={monthFilter} onChange={(event) => setMonthFilter(event.target.value)} />
+          </label>
+
+          <label>
+            Дата от
+            <input type="date" value={dateFrom} onChange={(event) => setDateFrom(event.target.value)} />
+          </label>
+
+          <label>
+            Дата до
+            <input type="date" value={dateTo} onChange={(event) => setDateTo(event.target.value)} />
           </label>
         </div>
 
@@ -177,8 +227,10 @@ export function TransactionsPage() {
       <TransactionForm onSubmit={handleCreate} />
       <TransactionList
         transactions={filteredTransactions}
-        title="Отфильтрованные операции"
-        description="Живая выборка по поиску, типу операции и категории."
+        title="Все операции"
+        description="Полная история с фильтрацией по типу, категории и датам."
+        onDelete={handleDelete}
+        deletingId={deletingId}
       />
     </div>
   );

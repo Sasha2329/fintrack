@@ -1,16 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
-import { api, IntegrationMeta, TransactionItem } from '../services/api';
+import { api, TransactionItem } from '../services/api';
 
 export function IntegrationsPage() {
   const [transactions, setTransactions] = useState<TransactionItem[]>([]);
-  const [meta, setMeta] = useState<IntegrationMeta | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    Promise.all([api.getTransactions(), api.getIntegrationMeta()])
-      .then(([items, integrationMeta]) => {
+    api.getTransactions()
+      .then((items) => {
         setTransactions(items);
-        setMeta(integrationMeta);
       })
       .catch((fetchError: Error) => setError(fetchError.message));
   }, []);
@@ -37,9 +35,9 @@ export function IntegrationsPage() {
       <section className="hero-banner panel">
         <div className="hero-banner__content">
           <span className="eyebrow">Интеграции</span>
-          <h2>Как операции из тестового кошелька попадают в Финтрек</h2>
+          <h2>Как операции из кошелька попадают в Финтрек</h2>
           <p>
-            Здесь видны события, пришедшие из тестового банкового контура в основную систему учета,
+            Здесь видны события, пришедшие из кошелька в основную систему учета,
             а также техническая точка интеграции, на которую в будущем может быть подключен реальный банк.
           </p>
         </div>
@@ -47,25 +45,24 @@ export function IntegrationsPage() {
         <div className="hero-highlight hero-highlight--stable">
           <span>Импортированных операций</span>
           <strong>{importedTransactions.length}</strong>
-          <p>Все они пришли автоматически из тестового кошелька через интеграционный контур.</p>
+          <p>Все они пришли автоматически из кошелька через интеграционный контур.</p>
         </div>
       </section>
 
       <section className="panel integration-meta">
         <div className="panel-heading">
-          <h3>Параметры интеграции</h3>
-          <p>Технические сведения о канале обмена данными между кошельком и основной системой.</p>
+          <h3>Как работает обмен данными</h3>
+          <p>Кошелёк и основной раздел учёта синхронизируют операции автоматически, без ручного переноса данных.</p>
         </div>
 
         <div className="integration-meta__card">
-          <strong>Webhook-маршрут</strong>
-          <span>{meta?.note ?? 'Метаданные интеграции загружаются...'}</span>
-          {meta ? <div className="integration-url">{meta.exampleWebhookUrl}</div> : null}
+          <strong>Автоматическая передача операций</strong>
+          <span>После проведения операции в кошельке запись автоматически попадает в Финтрек и участвует в аналитике.</span>
         </div>
 
         <div className="integration-meta__card">
           <strong>Источник данных</strong>
-          <span>Тестовый кошелек выполняет роль демонстрационного банка и автоматически создает события списаний и зачислений.</span>
+          <span>Кошелёк выполняет роль демонстрационного банкового контура и автоматически создает события списаний и зачислений.</span>
         </div>
       </section>
 
@@ -95,7 +92,7 @@ export function IntegrationsPage() {
                       </div>
 
                       <div className="transaction-meta">
-                        <span className="badge badge--auto">Из тестового кошелька</span>
+                        <span className="badge badge--auto">Из кошелька</span>
                         <strong>{Number(transaction.amount).toLocaleString('ru-RU')} ₽</strong>
                         <span>{transaction.type === 'income' ? 'Зачисление' : 'Списание'}</span>
                       </div>
@@ -104,7 +101,7 @@ export function IntegrationsPage() {
                 </section>
               ))
           ) : (
-            <div className="empty-state">Пока нет импортированных операций из тестового кошелька.</div>
+            <div className="empty-state">Пока нет импортированных операций из кошелька.</div>
           )}
         </div>
       </section>

@@ -24,7 +24,7 @@ export function AppLayout() {
     { to: '/notifications', label: 'Уведомления' },
     { to: '/reports', label: 'Отчеты' },
     ...(session?.user.role === 'admin' ? [{ to: '/admin/users', label: 'Пользователи' }] : []),
-    { to: '/sandbox-wallet', label: 'Тестовый кошелек' },
+    { to: '/sandbox-wallet', label: 'Кошелёк' },
     { to: '/sandbox-wallet/history', label: 'История кошелька' },
     { to: '/transactions', label: 'Операции' }
   ];
@@ -236,6 +236,21 @@ export function AppLayout() {
         </header>
 
         <Outlet />
+
+        <footer className="site-footer panel">
+          <div>
+            <strong>Финтрек</strong>
+            <p>Веб-приложение для учёта личных финансов, контроля бюджета и истории операций.</p>
+          </div>
+          <div>
+            <strong>Контакты</strong>
+            <p>Связь для демонстрации и обратной связи: fintrack.support@demo.local</p>
+          </div>
+          <div>
+            <strong>Версия</strong>
+            <p>PWA-версия с облачным backend, офлайн-очередью и синхронизацией операций.</p>
+          </div>
+        </footer>
       </main>
     </div>
   );
