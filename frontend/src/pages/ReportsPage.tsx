@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { DateField } from '../components/DateField';
 import { api, TransactionItem } from '../services/api';
 
 function currentMonthKey() {
@@ -157,8 +158,7 @@ export function ReportsPage() {
         <div className="planner-grid">
           <label>
             Месяц отчета
-            <input
-              className="date-input"
+            <DateField
               type="month"
               value={month}
               onChange={(event) => setMonth(event.target.value)}

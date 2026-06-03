@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react';
+import { DateField } from '../components/DateField';
 import {
   api,
   SandboxWalletPayload,
@@ -755,8 +756,7 @@ export function SandboxWalletPage() {
 
                 <label>
                   Дата и время
-                  <input
-                    className="date-input"
+                  <DateField
                     type="datetime-local"
                     value={form.occurredAt}
                     onChange={(event) => setForm((prev) => ({ ...prev, occurredAt: event.target.value }))}

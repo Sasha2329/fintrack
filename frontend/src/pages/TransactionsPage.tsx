@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { DateField } from '../components/DateField';
 import { TransactionForm } from '../components/TransactionForm';
 import { TransactionList } from '../components/TransactionList';
 import {
@@ -188,8 +189,7 @@ export function TransactionsPage() {
 
           <label>
             Месяц
-            <input
-              className="date-input"
+            <DateField
               type="month"
               value={monthFilter}
               onChange={(event) => setMonthFilter(event.target.value)}
@@ -198,8 +198,7 @@ export function TransactionsPage() {
 
           <label>
             Дата от
-            <input
-              className="date-input"
+            <DateField
               type="date"
               value={dateFrom}
               onChange={(event) => setDateFrom(event.target.value)}
@@ -208,8 +207,7 @@ export function TransactionsPage() {
 
           <label>
             Дата до
-            <input
-              className="date-input"
+            <DateField
               type="date"
               value={dateTo}
               onChange={(event) => setDateTo(event.target.value)}

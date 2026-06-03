@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { TransactionPayload } from '../services/api';
+import { DateField } from './DateField';
 
 interface TransactionFormProps {
   onSubmit: (payload: TransactionPayload) => Promise<void>;
@@ -102,8 +103,7 @@ export function TransactionForm({ onSubmit }: TransactionFormProps) {
 
         <label>
           Дата операции
-          <input
-            className="date-input"
+          <DateField
             type="date"
             value={form.transactionDate}
             onChange={(event) =>

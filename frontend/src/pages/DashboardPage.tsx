@@ -1,5 +1,6 @@
 import { ChangeEvent, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { DateField } from '../components/DateField';
 import { DonutChartCard } from '../components/DonutChartCard';
 import { StatsCard } from '../components/StatsCard';
 import { TransactionList } from '../components/TransactionList';
@@ -139,8 +140,7 @@ export function DashboardPage() {
           <div className="month-filter">
             <label>
               Период анализа
-              <input
-                className="date-input"
+              <DateField
                 type="month"
                 value={selectedMonth}
                 onChange={(event) => setSelectedMonth(event.target.value)}

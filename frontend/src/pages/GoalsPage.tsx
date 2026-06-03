@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { DateField } from '../components/DateField';
 import { api } from '../services/api';
 import { FinancialGoal, getFinancialGoals, saveFinancialGoals } from '../services/planning';
 
@@ -105,8 +106,7 @@ export function GoalsPage() {
                 </label>
                 <label>
                   Дата цели
-                  <input
-                    className="date-input"
+                  <DateField
                     type="date"
                     value={goal.deadline}
                     onChange={(event) => updateGoal(goal.id, 'deadline', event.target.value)}
