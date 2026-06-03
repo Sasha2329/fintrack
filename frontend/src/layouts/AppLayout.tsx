@@ -4,6 +4,49 @@ import { clearSession, getStoredSession } from '../services/auth';
 import { getPendingTransactionsCount, syncPendingTransactions } from '../services/api';
 import { BeforeInstallPromptEvent, canShowIosInstallHint, isStandaloneMode } from '../services/pwa';
 
+function MobileNavIcon({ kind }: { kind: 'menu' | 'home' | 'wallet' | 'plus' | 'profile' }) {
+  switch (kind) {
+    case 'menu':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16" />
+          <path d="M4 12h16" />
+          <path d="M4 17h16" />
+        </svg>
+      );
+    case 'home':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 10.8 12 4l8 6.8" />
+          <path d="M7 10.5V20h10v-9.5" />
+        </svg>
+      );
+    case 'wallet':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 8.5h16" />
+          <path d="M6 8.5V7a1.5 1.5 0 0 1 1.5-1.5h9A1.5 1.5 0 0 1 18 7v1.5" />
+          <rect x="4" y="8.5" width="16" height="10" rx="2.5" />
+          <path d="M15.5 12.2h4v2.3h-4a1.15 1.15 0 1 1 0-2.3Z" />
+        </svg>
+      );
+    case 'plus':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14" />
+          <path d="M5 12h14" />
+        </svg>
+      );
+    case 'profile':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="3.5" />
+          <path d="M5 19c1.6-3 4-4.5 7-4.5S17.4 16 19 19" />
+        </svg>
+      );
+  }
+}
+
 export function AppLayout() {
   const session = getStoredSession();
   const navigate = useNavigate();
@@ -30,6 +73,40 @@ export function AppLayout() {
   ];
   const currentPageLabel =
     navigation.find((item) => item.to === location.pathname)?.label ?? 'Финтрек';
+  const mobileNavItems = [
+    {
+      key: 'menu',
+      label: 'Меню',
+      icon: 'menu' as const,
+      action: () => setIsMobileMenuOpen((prev) => !prev),
+      isActive: isMobileMenuOpen
+    },
+    {
+      key: 'dashboard',
+      label: 'Главная',
+      icon: 'home' as const,
+      to: '/'
+    },
+    {
+      key: 'wallet',
+      label: 'Кошелёк',
+      icon: 'wallet' as const,
+      to: '/sandbox-wallet'
+    },
+    {
+      key: 'new-transaction',
+      label: 'Добавить',
+      icon: 'plus' as const,
+      to: '/transactions#transaction-form',
+      accent: true
+    },
+    {
+      key: 'profile',
+      label: 'Профиль',
+      icon: 'profile' as const,
+      to: '/profile'
+    }
+  ];
 
   useEffect(() => {
     const refreshStatus = () => {
@@ -251,6 +328,56 @@ export function AppLayout() {
             <p>PWA-версия с облачным backend, офлайн-очередью и синхронизацией операций.</p>
           </div>
         </footer>
+
+        <nav className="mobile-bottom-nav" aria-label="Нижняя навигация">
+          {mobileNavItems.map((item) => {
+            if ('action' in item) {
+              return (
+                <button
+                  key={item.key}
+                  type="button"
+                  className={item.isActive ? 'mobile-bottom-nav__item mobile-bottom-nav__item--active' : 'mobile-bottom-nav__item'}
+                  onClick={item.action}
+                  aria-label={item.label}
+                >
+                  <span className="mobile-bottom-nav__icon">
+                    <MobileNavIcon kind={item.icon} />
+                  </span>
+                  <span className="mobile-bottom-nav__label">{item.label}</span>
+                </button>
+              );
+            }
+
+            const isActive =
+              item.to === '/'
+                ? location.pathname === '/'
+                : item.to
+                  ? location.pathname === item.to || (item.to.startsWith('/transactions') && location.pathname === '/transactions')
+                  : false;
+
+            return (
+              <NavLink
+                key={item.key}
+                to={item.to ?? '/'}
+                className={
+                  item.accent
+                    ? isActive
+                      ? 'mobile-bottom-nav__item mobile-bottom-nav__item--accent mobile-bottom-nav__item--active'
+                      : 'mobile-bottom-nav__item mobile-bottom-nav__item--accent'
+                    : isActive
+                      ? 'mobile-bottom-nav__item mobile-bottom-nav__item--active'
+                      : 'mobile-bottom-nav__item'
+                }
+                aria-label={item.label}
+              >
+                <span className="mobile-bottom-nav__icon">
+                  <MobileNavIcon kind={item.icon} />
+                </span>
+                <span className="mobile-bottom-nav__label">{item.label}</span>
+              </NavLink>
+            );
+          })}
+        </nav>
       </main>
     </div>
   );

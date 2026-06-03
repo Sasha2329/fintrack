@@ -9,6 +9,7 @@ import { ForecastPage } from './pages/ForecastPage';
 import { GoalsPage } from './pages/GoalsPage';
 import { IntegrationsPage } from './pages/IntegrationsPage';
 import { NotificationsPage } from './pages/NotificationsPage';
+import { ProfilePage } from './pages/ProfilePage';
 import { ReportsPage } from './pages/ReportsPage';
 import { SandboxWalletPage } from './pages/SandboxWalletPage';
 import { TransactionsPage } from './pages/TransactionsPage';
@@ -40,6 +41,7 @@ export function App() {
         <Route path="goals" element={<GoalsPage />} />
         <Route path="integrations" element={<IntegrationsPage />} />
         <Route path="notifications" element={<NotificationsPage />} />
+        <Route path="profile" element={<ProfilePage />} />
         <Route path="reports" element={<ReportsPage />} />
         <Route path="sandbox-wallet" element={<SandboxWalletPage />} />
         <Route path="sandbox-wallet/history" element={<WalletHistoryPage />} />

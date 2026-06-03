@@ -104,6 +104,7 @@ export function TransactionForm({ onSubmit }: TransactionFormProps) {
         <label>
           Дата операции
           <input
+            className="date-input"
             type="date"
             value={form.transactionDate}
             onChange={(event) =>
