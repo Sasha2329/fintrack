@@ -20,13 +20,13 @@ export class TransactionsController {
     return this.transactionsService.create(user.sub, dto);
   }
 
-  @Delete(':id')
-  remove(@CurrentUser() user: JwtPayload, @Param('id') id: string) {
-    return this.transactionsService.removeOneForUser(user.sub, id);
-  }
-
   @Delete('reset')
   reset(@CurrentUser() user: JwtPayload) {
     return this.transactionsService.clearAllForUser(user.sub);
+  }
+
+  @Delete(':id')
+  remove(@CurrentUser() user: JwtPayload, @Param('id') id: string) {
+    return this.transactionsService.removeOneForUser(user.sub, id);
   }
 }

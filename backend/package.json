@@ -1,5 +1,5 @@
 {
-  "name": "financeflow-backend",
+  "name": "fintrack-backend",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -13,6 +13,7 @@
     "build": "nest build",
     "lint": "eslint \"src/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
+    "seed:may": "node scripts/seed-may-transactions.mjs",
     "test:webhook:income": "node scripts/send-income-webhook.mjs",
     "test:webhook:expense": "node scripts/send-expense-webhook.mjs"
   },
