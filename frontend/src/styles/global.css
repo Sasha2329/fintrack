@@ -134,6 +134,7 @@ textarea {
 
 label {
   display: block;
+  min-width: 0;
   color: var(--muted);
   font-size: 0.95rem;
 }
@@ -143,6 +144,16 @@ label {
   margin-top: 0.45rem;
   color: var(--muted);
   font-size: 0.82rem;
+}
+
+.field-hint,
+.panel-heading p,
+.hero-content > p,
+.hero-highlight p,
+.stats-card p,
+.profile-hero__card > p,
+.auth-card > p {
+  display: none;
 }
 
 #root {
@@ -1743,6 +1754,23 @@ label {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.form-grid > label,
+.planner-grid > label,
+.toolbar-grid > label {
+  min-width: 0;
+}
+
+input[type='date'],
+input[type='month'],
+input[type='datetime-local'] {
+  width: 100%;
+  inline-size: 100%;
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 @media (max-width: 1280px) {
