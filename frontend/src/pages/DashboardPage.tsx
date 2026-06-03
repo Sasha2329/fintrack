@@ -140,6 +140,7 @@ export function DashboardPage() {
             <label>
               Период анализа
               <input
+                className="date-input"
                 type="month"
                 value={selectedMonth}
                 onChange={(event) => setSelectedMonth(event.target.value)}

@@ -157,7 +157,12 @@ export function ReportsPage() {
         <div className="planner-grid">
           <label>
             Месяц отчета
-            <input type="month" value={month} onChange={(event) => setMonth(event.target.value)} />
+            <input
+              className="date-input"
+              type="month"
+              value={month}
+              onChange={(event) => setMonth(event.target.value)}
+            />
           </label>
           <div className="report-summary">
             <span>Доходы: {totals.income.toLocaleString('ru-RU')} ₽</span>

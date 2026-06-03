@@ -756,6 +756,7 @@ export function SandboxWalletPage() {
                 <label>
                   Дата и время
                   <input
+                    className="date-input"
                     type="datetime-local"
                     value={form.occurredAt}
                     onChange={(event) => setForm((prev) => ({ ...prev, occurredAt: event.target.value }))}

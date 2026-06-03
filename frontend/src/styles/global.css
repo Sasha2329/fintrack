@@ -67,10 +67,14 @@ input[type='month'],
 input[type='datetime-local'] {
   min-width: 0;
   max-width: 100%;
+  width: 100%;
+  inline-size: 100%;
 }
 
 .date-input {
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .date-input::-webkit-datetime-edit,
@@ -78,12 +82,21 @@ input[type='date']::-webkit-datetime-edit,
 input[type='month']::-webkit-datetime-edit,
 input[type='datetime-local']::-webkit-datetime-edit {
   padding: 0;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .date-input::-webkit-datetime-edit-fields-wrapper,
 input[type='date']::-webkit-datetime-edit-fields-wrapper,
 input[type='month']::-webkit-datetime-edit-fields-wrapper,
 input[type='datetime-local']::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -91,7 +104,23 @@ input[type='datetime-local']::-webkit-datetime-edit-fields-wrapper {
 input[type='date']::-webkit-date-and-time-value,
 input[type='month']::-webkit-date-and-time-value,
 input[type='datetime-local']::-webkit-date-and-time-value {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
   text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.date-input::-webkit-calendar-picker-indicator,
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='month']::-webkit-calendar-picker-indicator,
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0.95rem;
+  margin: 0;
 }
 
 input::placeholder,
@@ -2221,13 +2250,14 @@ input[type='datetime-local'] {
   input[type='month'],
   input[type='datetime-local'] {
     font-size: 0.92rem;
-    padding-right: 2.9rem;
+    min-height: 54px;
+    padding-right: 3.2rem;
   }
 
   .date-input::-webkit-calendar-picker-indicator,
   input[type='date']::-webkit-calendar-picker-indicator,
   input[type='month']::-webkit-calendar-picker-indicator,
   input[type='datetime-local']::-webkit-calendar-picker-indicator {
-    margin-left: 0.4rem;
+    right: 0.9rem;
   }
 }

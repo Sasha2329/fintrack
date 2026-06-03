@@ -47,7 +47,6 @@ export function TransactionForm({ onSubmit }: TransactionFormProps) {
     <form className="panel form-panel" onSubmit={handleSubmit}>
       <div className="panel-heading">
         <h3>Новая операция</h3>
-        <p>Добавьте доход или расход, чтобы увидеть движение средств.</p>
       </div>
 
       <div className="form-grid">

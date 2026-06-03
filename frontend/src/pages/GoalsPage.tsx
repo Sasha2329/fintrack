@@ -105,7 +105,12 @@ export function GoalsPage() {
                 </label>
                 <label>
                   Дата цели
-                  <input type="date" value={goal.deadline} onChange={(event) => updateGoal(goal.id, 'deadline', event.target.value)} />
+                  <input
+                    className="date-input"
+                    type="date"
+                    value={goal.deadline}
+                    onChange={(event) => updateGoal(goal.id, 'deadline', event.target.value)}
+                  />
                 </label>
                 <label>
                   Целевая сумма

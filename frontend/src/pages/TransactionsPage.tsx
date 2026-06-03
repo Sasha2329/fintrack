@@ -188,17 +188,32 @@ export function TransactionsPage() {
 
           <label>
             Месяц
-            <input type="month" value={monthFilter} onChange={(event) => setMonthFilter(event.target.value)} />
+            <input
+              className="date-input"
+              type="month"
+              value={monthFilter}
+              onChange={(event) => setMonthFilter(event.target.value)}
+            />
           </label>
 
           <label>
             Дата от
-            <input type="date" value={dateFrom} onChange={(event) => setDateFrom(event.target.value)} />
+            <input
+              className="date-input"
+              type="date"
+              value={dateFrom}
+              onChange={(event) => setDateFrom(event.target.value)}
+            />
           </label>
 
           <label>
             Дата до
-            <input type="date" value={dateTo} onChange={(event) => setDateTo(event.target.value)} />
+            <input
+              className="date-input"
+              type="date"
+              value={dateTo}
+              onChange={(event) => setDateTo(event.target.value)}
+            />
           </label>
         </div>
 

@@ -55,26 +55,22 @@ export function ProfilePage() {
         <article className="stats-card">
           <span>ФИО</span>
           <strong>{session?.user.fullName ?? 'Не указано'}</strong>
-          <p>Имя пользователя, под которым выполняется вход в систему.</p>
         </article>
 
         <article className="stats-card stats-card--muted">
           <span>Электронная почта</span>
           <strong>{session?.user.email ?? 'Не указано'}</strong>
-          <p>Основной идентификатор аккаунта для входа и уведомлений.</p>
         </article>
 
         <article className="stats-card stats-card--accent">
           <span>Общий баланс</span>
           <strong>{summary ? formatCurrency(summary.overallBalance) : 'Загрузка...'}</strong>
-          <p>Актуальный финансовый результат по всем учтённым операциям пользователя.</p>
         </article>
       </div>
 
       <section className="panel profile-summary-panel">
         <div className="panel-heading">
           <h3>Краткая сводка</h3>
-          <p>Основные показатели, которые помогают быстро оценить состояние финансов.</p>
         </div>
 
         <div className="profile-summary-grid">
